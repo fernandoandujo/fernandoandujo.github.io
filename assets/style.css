@@ -1,0 +1,111 @@
+:root {
+    --primary-color:#000e20;
+    --secondary-color:#ae5d00;
+}
+
+@media print {
+
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+
+    @page  
+{ 
+    /* size: auto;   auto is the initial value  */
+
+    /* this affects the margin in the printer settings */ 
+    margin: 0mm 0mm 0mm 0mm;  
+} 
+}
+
+.print {
+    display: none;
+}
+* {
+    font-family: 'Roboto';
+    font-size: 0.97rem;
+}
+
+body {
+    background: #b1b1b1;
+    color: var(--primary-color);
+}
+
+hr {
+    margin: 7px;
+}
+
+a,
+a:visited,
+a:active
+a:hover {
+    color: var(--primary-color);
+}
+
+.page {
+    max-width: 1080px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid rgb(20, 20, 20);
+    margin: 10px auto;
+}
+
+.sheet {
+    margin: 0px 13px 0px 13px;
+}
+
+.header {
+    text-align: center;
+}
+
+.titleName {
+    font-size: 2rem !important;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.titlePosition {
+    font-size: 1.5rem !important;
+}
+
+.sectionHeader {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem !important;
+    color: var(--secondary-color);
+}
+
+.areaDescription {
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.professionalSummaryDescription {
+    text-align: justify;
+}
+
+.job {
+    text-align: left;
+}
+
+.jobTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.educationDescription {
+    text-align: left;
+}
+
+.certificationDetail {
+    text-align: left;
+}
+
+.last-update {
+    font-size: 0.6rem;
+}
